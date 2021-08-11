@@ -1,0 +1,17 @@
+name: echo_env
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+env:
+  FOO: bar
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: does a thing
+        run: ./echo_env.sh
