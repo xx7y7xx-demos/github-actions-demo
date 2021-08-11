@@ -1,11 +1,6 @@
 name: echo_env
-on:
-  push:
-    branches:
-      - master
-  pull_request:
-    branches:
-      - master
+# Run this workflow every time a new commit pushed to your repository
+on: push
 env:
   FOO: bar
 jobs:
