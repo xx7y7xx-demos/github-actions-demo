@@ -8,5 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
+      - name: chmod
+        run: chmod 777 ./echo_env.sh
       - name: does a thing
         run: ./echo_env.sh
