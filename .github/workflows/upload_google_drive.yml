@@ -2,8 +2,8 @@ name: Backup
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "0 8 * * 5" # every friday AM 8:00
+  #schedule:
+  #  - cron: "0 8 * * 5" # every friday AM 8:00
 
 jobs:
   my_job:
